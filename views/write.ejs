@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/write.css">
+        <script src="js/write.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body id="body">
+        <div id="bigdiv1">
+            <button id="button1" onclick="moveHomepage()">돌아가기</button>
+            <button id="button2" onclick="moveUser()">사용자</button>
+            <button id="button3">알림</button>
+            <input id="input1" placeholder="찾기"/>
+        </div>
+        <div id="bigdiv2">
+            <div id="div1">글쓰기</div>
+            <div id="bigdiv3">
+                <div id="div2">제목</div>
+                <input id="input2"/>
+            </div>
+            <div id="bigdiv4">
+                <div id="div3">내용</div>
+                <textarea id="textarea1" oninput="textCounter()" style="resize: none" maxlength="1000"></textarea>
+                <span id="span1">문자:0</span>
+            </div>
+            <button id="button4" onclick="writeFinish()">작성</button>
+        </div>
+    </body>
+</html>

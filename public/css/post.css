@@ -1,0 +1,140 @@
+#body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgb(17,17,17);
+}
+
+#bigdiv1 {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: rgb(36,36,36);
+    border-bottom: 1px solid rgb(69,73,76);
+}
+
+#bigdiv2 {
+    position: relative;
+    width: 1000px;
+    height: 2000px;
+    border: 1px solid black;
+    left: 100px;
+    background-color: rgb(34,34,34);
+}
+
+#div1 {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#div2 {
+    margin-top: 20px;
+    padding: 2px;
+    border-bottom: 1px solid rgb(69,73,76);
+}
+
+#button1 {
+    width: 100px;
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    left:0;
+}
+
+#button2 {
+    border: 0;
+    background-color: transparent;
+    color: white;
+}
+
+#button3 {
+    border: 0;
+    background-color: transparent;
+    color: white;
+}
+
+#button4 {
+    width: 70;
+    display: inline-block;
+    padding: 0;
+    height: 30px;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(69,73,76);
+    margin-right: 15px;
+}
+
+#input1 {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    outline: 0;
+    border-bottom: 2px solid white;
+    background-color: rgb(69,69,69);
+    color: white;
+}
+
+#input1::placeholder{
+    color: white;
+}
+
+#select1 {
+    display: inline-block;
+    height: 30px;
+    width: 70px;
+    border:1px solid rgb(69,73,76);
+    background-color: transparent;
+    color:white;
+    margin-left: 15px;
+}
+
+.option {
+    background-color: rgb(34,34,34);;
+}
+
+.span {
+    color:white;
+}
+
+#span1 {
+    margin: 60px;
+}
+
+#span2 {
+    margin-right: 400px;
+}
+
+#span3 {
+    margin-right: 100px;
+}
+
+#span4 {
+    margin-right: 50px;
+}
+
+#span5 {
+    margin-right: 40px;
+}
+
+.newbigdiv{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-bottom: 1px solid rgb(69,73,76);
+}
+
+.newsmalldiv1 {
+    color:white;
+    margin: 75px;
+}
+.newsmalldiv2 {
+    color:white;
+    margin-right: 400px;
+}

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/signup.css"/>
+        <script src="js/signup.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body id="body">
+        <div id="bigdiv1">
+            <div id="div1">
+                <button id="button1" onclick="moveSignIn()">로그인</button>
+                <button id="button2">회원가입</button>
+                <button id="button3" onclick="moveSignFind()">계정찾기</button>
+            </div>
+            <div id="div2">
+                <input id="input1" placeholder="성(姓)" onchange="signUpfirstname()"/>
+                <input id="input2" placeholder="이름(성은 제외)" onchange="signUplastname()"/>
+            </div>
+            <h5 id="h1">아이디</h3>
+            <input id="input3" placeholder="아이디를 입력해주세요." onchange="signUpid()"/>
+            <h5 id="h2">비밀번호</h3>
+            <input id="input4" placeholder="비밀번호를 입력해주세요." onchange="signUppassword()" type="password"/>
+            <button id="button4" onclick="signUpfinish()">회원가입</button>
+        </div>
+    </body>
+</html> 

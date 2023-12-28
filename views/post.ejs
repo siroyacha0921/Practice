@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/post.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/post.js"></script>
+    </head>
+    <body id="body">
+        <div id="bigdiv1">
+            <button id="button1" onclick="moveHomepage()">돌아가기</button>
+            <button id="button2" onclick="moveUser()">사용자</button>
+            <button id="button3">알림</button>
+            <input id="input1" placeholder="찾기"/>
+        </div>
+        <div id="bigdiv2">
+            <div id="div1">
+                <select id="select1">
+                    <option class="option" selected="selected">최신순</option>
+                    <option class="option">과거순</option>
+                    <option class="option">추천순</option>
+                    <option class="option">댓글순</option>
+                </select>
+                <button id="button4" onclick="moveWrite()">글쓰기</button>
+            </div>
+            <div id="div2">
+                <span class="span" id="span1">번호</span>
+                <span class="span" id="span2">제목</span>
+                <span class="span" id="span3">작성자</span>
+                <span class="span" id="span4">작성일</span>
+                <span class="span" id="span5">조회수</span>
+                <span class="span" id="span6">추천</span>
+            </div>
+        </div>
+    </body>
+</html>
