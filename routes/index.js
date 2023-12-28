@@ -10,6 +10,7 @@ const signoutRouter = require("./signout.js")
 const postRouter = require("./post.js")
 const userRouter = require("./user.js")
 const writeRouter = require("./write.js")
+const checkwriteRouter = require("./checkwrite.js")
 
 // 적용
 router.use("/", homepageRouter)
@@ -20,5 +21,6 @@ router.use("/", postRouter)
 router.use("/", userRouter)
 router.use("/", writeRouter)
 router.use("/", signoutRouter)
+router.use("/", checkwriteRouter)
 
 module.exports = router

@@ -8,7 +8,7 @@ function moveUser() {
 }
 
 function moveWrite() {
-    window.location.href = "/write"
+    window.location.href = "/checkwrite"
 }
 
 async function loadingPost() {
