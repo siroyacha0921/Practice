@@ -4,7 +4,7 @@ function moveHomepage() {
 }
 
 function moveUser() {
-    window.location.href = "/user"
+    window.location.href = "/checkuser"
 }
 
 function moveWrite() {

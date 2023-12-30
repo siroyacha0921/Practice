@@ -1,10 +1,10 @@
 const express = require("express")
 const router = express.Router()
 
-const authmiddleware = require("../middleware/auth-middlewar")
+const authmiddleware = require("../../middleware/auth-middleware.js")
 
 router.get("/checkwrite", function (req,res) {
-    res.render("checkwrite")
+    res.render("check/checkwrite")
 })
 router.post("/checkwrite", authmiddleware, function(req,res) {
     res.redirect("/write")

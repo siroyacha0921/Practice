@@ -1,4 +1,4 @@
-async function checkwrite() {
+async function req() {
     try { 
         await axios.post("/checkwrite")
         window.location.href = "/write"
@@ -9,4 +9,4 @@ async function checkwrite() {
     
 }
 
-checkwrite()
+req()

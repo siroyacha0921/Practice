@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/user-account.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="../js/user-account.js"></script>
+    </head>
+    <body id="body">
+        <div id="bigdiv1">
+            <button id="button1" onclick="movePost()">돌아가기</button>
+            <button id="button2">사용자</button>
+            <button id="button3">알림</button>
+            <input id="input1" placeholder="찾기"/>
+        </div>
+        <div id="bigdiv2">
+            <div>
+                <button id="button4">프로필</button>
+                <button id="button5">계정</button>
+            </div>
+            <div id="div1">
+                <div id="div2">프로필 이미지</div>
+                <input type="file" id="input2" style="display:none;" oninput="fileInput()"accept="image/*" accept=".jpg"/>
+                <label for="input2" id="label1">이미지 추가</label>
+                <img id="img1" width="150px" alt="이미지영역"/>
+            </div>
+        </div>
+    </body>
+</html>

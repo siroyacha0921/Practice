@@ -12,8 +12,8 @@ module.exports = async (req,res,next) => {
     }
 
     try {
-        const { userId } = jwt.verify(permission_token, process.env.PRIVATE_KEY)
-        const user = await User.findById(userId)
+        const { usertoken } = jwt.verify(permission_token, process.env.PRIVATE_KEY)
+        const user = await User.findById(usertoken)
         res.locals.user = user
         next()
     } catch (error) {
