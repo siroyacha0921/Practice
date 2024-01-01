@@ -60,18 +60,32 @@
     color: rgb(211,211,211);
     font-size: 25px;
     margin-left: 10px;
+    border-bottom: 2px solid rgb(78,90,181);
+}
+
+#button6 {
+    background-color: gray;
+    margin-left: 150px;
+    border: 0px;
+    color: white;
+    height: 30px;
 }
 
 #div1 {
+    font-size: 20px;
+    color: rgb(211,211,211);
     margin-top: 25px;
-    display: flex;
-    flex-direction: row;
+    margin-left: 30px;
 }
 
 #div2 {
-    margin-left:30px;
-    color: rgb(211,211,211);
+    margin-top: 20px;
+}
+
+#span1{
     font-size: 15px;
+    color: rgb(211,211,211);
+    margin-left: 30px;
 }
 
 #input1 {
@@ -86,9 +100,4 @@
 
 #input1::placeholder{
     color: white;
-}
-
-#label1 {
-    margin-left: 200px;
-    color:white
 }

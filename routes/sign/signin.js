@@ -5,10 +5,10 @@ const router = express.Router()
 const dotenv = require("dotenv")
 dotenv.config();
 //user-controller에서 만든 checkUser함수 가져오기
-const { createUser,checkUser } = require("../controllers/auth-controller.js")
+const { createUser,checkUser } = require("../../controllers/auth-controller.js")
 
 router.get('/signIn', function (req, res) {
-    res.render('signin')
+    res.render('sign/signin')
 })
 
 router.post('/signIn', checkUser)
