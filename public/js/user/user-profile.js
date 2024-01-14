@@ -9,7 +9,6 @@ function moveUserAccount() {
 async function userId() {
     const response = await axios.post("/user/profile")
     const userId = response.data.id
-    console.log(userId)
     document.getElementById("input3").value = userId   
 }
 
@@ -28,8 +27,6 @@ async function userLastname() {
 function movePost() {
     window.location.href = "/post"
 }
-
-//프로필 이미지
 
 userId()
 userFirstname()

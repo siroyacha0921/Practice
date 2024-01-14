@@ -18,13 +18,13 @@
             </div>
             <div id="profile-image">
                 <div id="div1">프로필 이미지</div>
-                <input type="file" id="input2" style="display:none;" oninput="fileInput()"accept="image/*" accept=".jpg"/>
-                <label for="input2" id="label1"></label>
-                <img id="img1" width="150px" height="150px" src="https://th.bing.com/th/id/OIP.pTg82VZTFrXbh3nTh1x6xAAAAA?rs=1&pid=ImgDetMain"/>
+                <input type="file" id="image" style="display:none;" accept="img/*"/>
+                <label for="image" id="label1"></label>
+                <img id="image_container" width="150px" height="150px" src="https://th.bing.com/th/id/OIP.pTg82VZTFrXbh3nTh1x6xAAAAA?rs=1&pid=ImgDetMain"/>
             </div>
             <div id="profile-id">
                 <span id="span1">아이디</span>
-                <input id="input3" value="아이디"/>
+                <input id="input3"/>
             </div>
             <div id="profile-name">
                 <span id="span2">이름</span>
@@ -33,5 +33,18 @@
             </div>
             <button onclick="moveSignOut()">로그아웃</button>
         </div>
+        <!-- 프로필이미지 -->
+        <script>
+            const image = document.querySelector("#image")
+            image.addEventListener("change", (event) => {
+                const reader = new FileReader()
+                reader.readAsDataURL(event.target.files[0])
+
+                reader.onload = function(event) {
+                    const img = document.querySelector("#image_container")
+                    img.setAttribute("src", event.target.result)
+                }
+            })
+        </script>
     </body>
 </html>

@@ -5,3 +5,7 @@ function moveUserProfile() {
 function moveUserRepassword() {
     window.location.href = "/user/repassword"
 }
+
+function movePost() {
+    window.location.href = "/post"
+}

@@ -33,6 +33,12 @@ const checkUser = async (req,res) => {
 
 }
 
+const updataUserPassword = async(req,res) => {
+    const { repassword } = req.body
+    const userId = res.locals.user
+    await User.updateOne({_id : userId} , {$set : {password : repassword}})
+    res.status(200).json({ message: "비밀번호가 변경되었습니다." })
+}
 
-module.exports = { createUser,checkUser }
+module.exports = { createUser,checkUser,}
 
